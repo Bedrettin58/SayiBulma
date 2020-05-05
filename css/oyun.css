@@ -48,8 +48,8 @@ div.zorluk label:hover{
     top:10px;
     font-weight: bold;
     font-size: 1.2rem;
-    width: 50%;
-    left: 25%;
+    width: 70%;
+    left: 15%;
     text-align: center;
     vertical-align: bottom;
     background-color: rgb(116, 191, 201);
@@ -228,5 +228,11 @@ legend{
   } 
   @keyframes fadeIn {
     from { opacity: 0;  }
-    to {opacity: 1 ;  
+    to {opacity: 1 ; } 
+  }
+  h3{
+      position: relative;
+      top:20px;
+      width: 150px;
+      margin:auto;   
   }
