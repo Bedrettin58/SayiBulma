@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sayı Bulma</title>
+    <link rel="stylesheet" href="css/oyun.css">
+</head>
+
+<body>
+    <audio id="sesTada">
+        <source src="sounds/tada.wav" type="audio/wav">
+    </audio>   
+
+    <div id="ana">
+        <div id="oyunadi">Dört Basamaklı Sayı Bulma Oyunu</div>
+        <div class="zorluk">
+            <div>
+                <input type="radio" id="kolay" name="zorluk" value="kolay">
+                <label for="kolay">Kolay</label>
+            </div>
+            <div>
+                <input type="radio" id="orta" name="zorluk" value="orta" checked>
+                <label for="orta">Orta</label>
+            </div>
+            <div>
+                <input type="radio" id="uzman" name="zorluk" value="uzman">
+                <label for="uzman">Uzman</label><br>
+            </div>
+
+        </div>
+        <div id="sissayi">x x x x</div>
+
+        <div class="giris">
+            <div id="tahminTxt">Tahmininiz</div>
+
+
+            <div id="tahminBox"></div>
+
+            <div class="tuslar">
+                <div class="rakamlar">
+                    <div class="rakam" id="0">0</div>
+                    <div class="rakam" id="1">1</div>
+                    <div class="rakam" id="2">2</div>
+                    <div class="rakam" id="3">3</div>
+                    <div class="rakam" id="4">4</div>
+                </div>
+                <div class="rakamlar">
+                    <div class="rakam" id="5">5</div>
+                    <div class="rakam" id="6">6</div>
+                    <div class="rakam" id="7">7</div>
+                    <div class="rakam" id="8">8</div>
+                    <div class="rakam" id="9">9</div>
+                </div>
+            </div>
+            <div class="test-sil">
+                <div id="test" onclick="testet()">Test Et</div>
+                <div id="sil" onclick="rakamSil()">Sil</div>
+            </div>
+        </div>
+
+        <fieldset class="sonuc">
+            <legend>* Geçmiş tahminler *</legend>
+            <span id="gecmis" name="gecmis" readonly></span>
+        </fieldset>
+        <!--div class="sonuc">
+            <span>Geçmiş Tahminleriniz</span>
+            <span id="gecmis" name="gecmis" readonly></span>
+        </div-->
+        <span class="popuptext" id="mesaj">Pop up Text xxxxxxx xxxxxx </span>
+        <span class="popupUyari" id="uyari">Eksik rakam girdiniz</span>
+    </div>
+    
+    <script src="script/oyun.js"></script>
+</body>
+
+</html>

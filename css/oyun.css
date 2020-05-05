@@ -1,0 +1,232 @@
+:root{
+    --hover-color:rgb(211, 226, 157);
+    --hover-shadow:rgb(38, 85, 38); 
+}
+body{
+    position: relative;
+    box-sizing: border-box;
+}
+#ana{
+    position: relative;
+    margin-top:20px;
+    width: 40%;
+    height: 480px;
+    background-color: rgb(147, 181, 204);
+    margin-left: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0); 
+    /*overflow-y: hidden;*/
+    /*background-color: rgba(95, 4, 4, 0.6);*/
+}
+#oyunadi{
+    left: auto;
+    font-size: 1.5rem;
+    background-color: rgb(116, 191, 201);
+    border: 1px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center; 
+}
+div.zorluk {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div.zorluk label:hover{
+    /*background-color: var(--hover-color);*/
+    font-weight: bold;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px){
+    .zorluk{
+      display: block;
+    }
+  }
+#sissayi{
+    position: relative;
+    top:10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    vertical-align: bottom;
+    background-color: rgb(116, 191, 201);
+    border: 1px solid;
+}
+/* ---------------*/
+.giris {
+    position: relative;
+    top:20px;
+    height: 180px;
+    font-size: 1.5rem;
+    padding: 8px 8px;
+    background-color: rgb(116, 191, 201);
+    border: 1px solid;
+}
+#tahminTxt{
+    /*position: absolute;*/
+    margin: auto;
+    width: 110px;
+}
+#tahminBox{
+    margin: auto;
+    font-size: 1.5rem;
+    width: 80px;
+    height: 29px;
+    border: navy;
+    background-color: lightblue;
+    text-align: center;
+}
+.tuslar{
+    position: relative;
+    top:10px;
+}
+#test{
+    display: inline-block;
+    text-align: center;   
+    padding-top:3px;
+    width: 58px;
+    height: 26px;
+    font-size: 1.1rem;
+    background-color: rgba(147, 181, 204,0);
+    border:navy;
+    cursor: pointer;
+}
+#test:hover{
+    background-color: var(--hover-color);
+    box-shadow: 0 0 1px 1px var(--hover-shadow);
+}
+#sil{
+    display: inline-block;
+    text-align: center;
+    padding-top:3px;
+    width: 35px;
+    height: 26px;
+    font-size: 1.1rem;
+    background-color: rgba(147, 181, 204,0); 
+    border:navy;
+    cursor: pointer;
+}
+.test-sil{
+    position: relative;
+    top:15px;
+    text-align: center;
+
+}
+.rakamlar {
+    text-align: center;
+    top:75px;
+    padding: 5px 5px;
+}
+.rakamlar div{
+    font-size: 1.2rem;
+    display: inline-block;
+    padding-top:4px;
+    width: 27px;
+    height: 27px;
+    background-color: rgb(147, 181, 204);
+    box-shadow: 0 0 4px 1px rgb(60, 66, 83); 
+    cursor: pointer;
+}
+.rakamlar div:hover{
+    background-color: var(--hover-color);
+}
+#sil:hover{
+    background-color: var(--hover-color);
+    box-shadow: 0 0 1px 1px var(--hover-shadow);
+}
+
+fieldset{
+    position: relative;
+    top: 20px;
+}
+
+.sonuc {
+    position: relative;
+    top:30px;
+    height: 125px;
+    background-color: rgb(116, 191, 201);
+    border: 1px solid;
+    padding-left: 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-y: auto;
+    
+}
+legend{
+    font-size: 1.1rem;
+}
+
+/* -----  The actual Popup --------*/
+  #ana .popuptext {
+    visibility: hidden;
+    position: absolute;
+    width: 35.5vw;
+    background-color: rgb(148, 201, 63);
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 8px 8px; 
+    z-index: 1;
+    top:40%;
+    left: 5%;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0);  
+  }
+  #ana .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        top:80%;
+    }
+    to {opacity:1 ;
+        top:40%;
+    }
+  } 
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        top:80%;
+    }
+    to {opacity:1 ;
+        top:40%;
+    }
+  }
+
+  /* Uyari*/
+  #ana .popupUyari {
+    visibility: hidden;
+    position: absolute;
+    width: 35.5vw;
+    background-color: rgb(201, 176, 63);
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 8px 8px; 
+    z-index: 1;
+    top:40%;
+    left: 5%;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0);  
+  }
+  #ana .show2 {
+    visibility: visible;
+    -webkit-animation: fadeIn 1.5s;
+    animation: fadeIn 1.5s;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from { opacity: 0;  }
+    to {opacity: 1 ; } 
+  } 
+  @keyframes fadeIn {
+    from { opacity: 0;  }
+    to {opacity: 1 ;  
+  }
