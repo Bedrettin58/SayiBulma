@@ -10,7 +10,7 @@ body{
     position: relative;
     margin-top:20px;
     width: 80%;
-    height: 480px;
+    height: 530px;
     background-color: rgb(147, 181, 204);
     margin-left: 10%;
     padding: 10px;
@@ -22,6 +22,8 @@ body{
 #oyunadi{
     left: auto;
     font-size: 1.5rem;
+    height: 40px;
+    padding-top: 7px;
     background-color: rgb(116, 191, 201);
     border: 1px solid;
     border-top-left-radius: 5px;
@@ -47,10 +49,12 @@ div.zorluk label:hover{
     position: relative;
     top:10px;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 70%;
+    height:40px;
     left: 15%;
     text-align: center;
+    padding-top: 6px;
     vertical-align: bottom;
     background-color: rgb(116, 191, 201);
     border: 1px solid;
@@ -59,7 +63,7 @@ div.zorluk label:hover{
 .giris {
     position: relative;
     top:20px;
-    height: 180px;
+    height: 220px;
     font-size: 1.5rem;
     padding: 8px 8px;
     background-color: rgb(116, 191, 201);
@@ -68,7 +72,9 @@ div.zorluk label:hover{
 #tahminTxt{
     /*position: absolute;*/
     margin: auto;
-    width: 110px;
+    width: 90%;
+    text-align: center;
+    /*width: 110px;*/
 }
 #tahminBox{
     margin: auto;
@@ -81,7 +87,7 @@ div.zorluk label:hover{
 }
 .tuslar{
     position: relative;
-    top:10px;
+    top:12px;
 }
 #test{
     display: inline-block;
@@ -118,14 +124,15 @@ div.zorluk label:hover{
 .rakamlar {
     text-align: center;
     top:75px;
-    padding: 5px 5px;
+    padding: 6px 6px;
 }
 .rakamlar div{
     font-size: 1.2rem;
     display: inline-block;
-    padding-top:4px;
-    width: 27px;
-    height: 27px;
+    padding-top:8px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
     background-color: rgb(147, 181, 204);
     box-shadow: 0 0 4px 1px rgb(60, 66, 83); 
     cursor: pointer;
