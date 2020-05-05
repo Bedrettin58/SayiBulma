@@ -163,7 +163,7 @@ legend{
   #ana .popuptext {
     visibility: hidden;
     position: absolute;
-    width: 35.5vw;
+    width: 90%;
     background-color: rgb(148, 201, 63);
     color: #fff;
     text-align: center;
@@ -204,7 +204,7 @@ legend{
   #ana .popupUyari {
     visibility: hidden;
     position: absolute;
-    width: 35.5vw;
+    width: 90%;
     background-color: rgb(201, 176, 63);
     color: #fff;
     text-align: center;
