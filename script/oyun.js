@@ -58,7 +58,6 @@ function testet(){
  
     /*
     if(!kuralKontrol(sayi)){
-
         alert("Girilien sayi kurala uygun olmalıdır");
         return;
     }
@@ -71,15 +70,25 @@ function testet(){
     sonucUret(sayi);
 
     var element = document.getElementById("gecmis");
-    if(arti > 0 && eksi > 0)
+    var testSonucu = document.getElementById("sissayi");
+    if(arti > 0 && eksi > 0){
+        var txt1 = tahminAdet + ". " +sayi + " +" + arti + " -" + eksi;
         var txt = tahminAdet + ". " +sayi + " +" + arti + " -" + eksi + "<br>";
-    else if(arti > 0 && eksi == 0)    
+    }
+    else if(arti > 0 && eksi == 0) {
+        var txt1 = tahminAdet + ". " +sayi + " +" + arti;
         var txt = tahminAdet + ". " +sayi + " +" + arti + "<br>";
-    else if(arti == 0 && eksi > 0)
+    }     
+    else if(arti == 0 && eksi > 0){
+        var txt1 = tahminAdet + ". " +sayi + " -" + eksi;
         var txt = tahminAdet + ". " +sayi + " -" + eksi + "<br>";
-    else if(arti == 0 && eksi == 0)
+    }  
+    else if(arti == 0 && eksi == 0){
+        var txt1 = tahminAdet + ". " +sayi + " →  " + arti;
         var txt = tahminAdet + ". " +sayi + " →  " + arti + "<br>";
-    
+    }
+        
+    testSonucu.innerHTML = txt1;
     element.innerHTML += txt;    
 
     //girilen rakamlar pasif yapılmış dinleme bırakılmıştı
