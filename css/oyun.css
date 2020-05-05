@@ -9,10 +9,10 @@ body{
 #ana{
     position: relative;
     margin-top:20px;
-    width: 40%;
+    width: 60%;
     height: 480px;
     background-color: rgb(147, 181, 204);
-    margin-left: 30%;
+    margin-left: 20%;
     padding: 10px;
     border-radius: 15px;
     box-shadow: 0 0 10px 2px rgb(0, 0, 0); 
@@ -233,6 +233,7 @@ legend{
   h3{
       position: relative;
       top:20px;
-      width: 150px;
+      width: 100%;
       margin:auto;   
+      text-align: center;
   }
