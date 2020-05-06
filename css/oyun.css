@@ -19,7 +19,17 @@ body{
     /*overflow-y: hidden;*/
     /*background-color: rgba(95, 4, 4, 0.6);*/
 }
+#close{
+    position: absolute;
+    right: 4px;
+}
+#help{
+    position: absolute;
+    right: 30px;
+}
 #oyunadi{
+    position: relative;
+    top:22px;
     left: auto;
     font-size: 1.5rem;
     
@@ -31,7 +41,9 @@ body{
     text-align: center; 
 }
 div.zorluk {
+    position: relative;
     display: flex;
+    top: 35px;
     justify-content: space-around;
     align-items: center;
 }
@@ -47,7 +59,7 @@ div.zorluk label:hover{
   }
 #sissayi{
     position: relative;
-    top:10px;
+    top:50px;
     font-weight: bold;
     font-size: 1.4rem;
     width: 70%;
@@ -56,13 +68,13 @@ div.zorluk label:hover{
     text-align: center;
     padding-top: 6px;
     vertical-align: bottom;
-    background-color: rgb(116, 191, 201);
+    background-color: rgb(116, 201, 168);
     border: 1px solid;
 }
 /* ---------------*/
 .giris {
     position: relative;
-    top:20px;
+    top:60px;
     height: 220px;
     font-size: 1.5rem;
     padding: 8px 8px;
@@ -146,13 +158,14 @@ div.zorluk label:hover{
 }
 
 fieldset{
-    position: relative;
+    position: absolute;
     top: 20px;
 }
 
+
 .sonuc {
     position: relative;
-    top:30px;
+    top:60px;
     height: 125px;
     background-color: rgb(116, 191, 201);
     border: 1px solid;
@@ -166,6 +179,30 @@ legend{
     font-size: 1.1rem;
 }
 
+.help{
+    visibility: hidden;
+    position: absolute;
+    width: 96%;
+    height: 450px;
+    background-color: rgb(225, 235, 210);
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 8px 8px; 
+    z-index: 1;
+    top:5%;
+    left: 1%;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0);  
+}
+.showHelp{
+    visibility: visible;
+}
+.help img{
+    position: absolute;
+    right: 4px; 
+    /*box-shadow: 0 0 7px 2px rgb(0, 255, 0); */
+}
 /* -----  The actual Popup --------*/
   #ana .popuptext {
     visibility: hidden;
