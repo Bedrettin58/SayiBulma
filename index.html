@@ -15,6 +15,10 @@
     </audio>   
 
     <div id="ana">
+        <div>
+            <img id="help" src="images/help.png" onclick="oyunHakkinda()">
+            <img id="close" src="images/close.png" alt="">
+        </div>
         <div id="oyunadi">Dört Basamaklı Sayı Bulma Oyunu</div>
         <div class="zorluk">
             <div>
@@ -71,6 +75,10 @@
         </div-->
         <span class="popuptext" id="mesaj">Pop up Text xxxxxxx xxxxxx </span>
         <span class="popupUyari" id="uyari">Eksik rakam girdiniz</span>
+        <span class="help" id="helpSpan">
+            <img src="images/close.png" alt="" onclick="oyunHakkinda()">
+            <iframe src="help.html" height="100%" width="100%" style="border:none;"></iframe>
+        </span>
     </div>
     <div><h3>Bedrettin Başkaya</h3></div>
     <script src="script/oyun.js"></script>
