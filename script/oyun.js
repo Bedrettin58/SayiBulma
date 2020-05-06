@@ -307,3 +307,9 @@ function uyariMesaj(mesaj) {
 function restart(){
     location.reload();
  }
+ //Oyun hakkında yardım ekranını göster/kapat
+ function oyunHakkinda(){
+    var ele = document.getElementById("helpSpan");
+    ele.classList.toggle("showHelp");
+    //console.log(ele);
+ }
